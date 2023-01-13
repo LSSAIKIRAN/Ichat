@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_50mdp"
+        android:src="@drawable/pic1"
+        android:id="@+id/storyImg"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/orange"
+
+        />
+
+        <com.devlomi.circularstatusview.CircularStatusView
+            android:id="@+id/statusCircle"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_50mdp"
+            app:portion_spacing="3dp"
+            app:portion_width="2dp"
+            app:portions_count="8" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your story"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+</LinearLayout>

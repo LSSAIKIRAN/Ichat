@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5mdp"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="@dimen/_45mdp"
+            android:layout_height="@dimen/_45mdp"
+            android:id="@+id/profileimage"
+            android:src="@drawable/pic1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/orange"
+            />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/_4mdp"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LSAAkiran"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13mdp"
+           />
+
+        <TextView
+            android:id="@+id/profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LSAAkiran"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/followBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Follow"
+            android:layout_marginEnd="@dimen/_16mdp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/follow_btn_bg"
+            android:textColor="@color/white"
+            android:paddingStart="@dimen/_10mdp"
+            android:paddingEnd="@dimen/_10mdp"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

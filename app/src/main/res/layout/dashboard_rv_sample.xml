@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pic1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/orange"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_6mdp"
+            >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/name"
+               android:text="unq_prince.xiiofficial"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bio"
+                android:textColor="@color/red"
+                android:text="Traveller"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_35mdp"
+                android:layout_height="@dimen/_35mdp"
+                android:id="@+id/setting"
+                android:src="@drawable/setting"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350mdp"
+        android:src="@drawable/pic1"
+        android:id="@+id/postImage"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/postDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8mdp"
+        android:layout_marginTop="@dimen/_5mdp"
+        android:layout_marginEnd="@dimen/_8mdp"
+        android:text="Post description"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_6mdp"
+       >
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/like"
+            android:text="22222"
+            android:drawablePadding="@dimen/_5mdp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/comment"
+            android:text="22222"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_5mdp"
+            android:layout_marginStart="@dimen/_10mdp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/share"
+            android:text="22222"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_5mdp"
+            android:layout_marginStart="@dimen/_10mdp"
+            android:gravity="center_vertical"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/save"
+          android:src="@drawable/save"
+          />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

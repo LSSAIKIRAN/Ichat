@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.NotificationFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textSize="@dimen/_25font_mdp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+       android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10mdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginStart="@dimen/_10mdp"
+        android:layout_marginEnd="@dimen/_10mdp"/>
+
+   <com.google.android.material.tabs.TabLayout
+       android:id="@+id/tabLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_8mdp"
+       android:layout_marginStart="@dimen/_8mdp"
+       android:layout_marginEnd="@dimen/_8mdp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"/>
+
+
+
+
+</LinearLayout>
